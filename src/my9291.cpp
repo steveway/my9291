@@ -126,7 +126,7 @@ void my9291::_send() {
             duty[0] = _color.white;
             duty[1] = _color.white;
             duty[2] = _color.blue;
-            duty[3] = 0;
+            duty[3] = _color.blue;
             duty[4] = _color.red;
             duty[5] = _color.green;
         } 
