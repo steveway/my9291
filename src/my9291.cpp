@@ -122,13 +122,13 @@ void my9291::_send() {
             duty[4] = 0;
             duty[5] = 0;
         } 
-	else if (_channels == 5) {
-            duty[0] = _color.white;
-            duty[1] = _color.white;
-            duty[2] = _color.blue;
-            duty[3] = _color.blue;
+        else if (_channels == 5) {
+            duty[0] = _color.green;
+            duty[1] = _color.blue;
+            duty[2] = _color.warm;
+            duty[3] = _color.white;
             duty[4] = _color.red;
-            duty[5] = _color.green;
+            duty[5] = 0;
         } 
         else {
             duty[0] = _color.white;
@@ -139,6 +139,7 @@ void my9291::_send() {
             duty[5] = _color.blue;
         }
     }
+
 
     unsigned char bit_length = 8;
 	switch (_command.bit_width) {
